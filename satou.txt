@@ -1,0 +1,102 @@
+Nuxt 3を使いこなすために基礎から徹底解説
+https://reffect.co.jp/vue/nuxt3
+
+1 Nuxt 3とは
+2 Nuxt 3プロジェクトの作成
+	npx nuxi init nuxt3-app2
+	cd nuxt3-app2
+	npm install
+	npm run dev
+　2.1 デフォルトディレクトリ構成
+　2.2 app.vueファイル
+　2.3 app.vue以外のファイル
+3 ディレクトリ構成
+　3.1 pagesディレクトリ
+	pagesディレクトリを作成してその下にindex.vueファイルを作成
+　3.2 layoutsディレクトリ
+	layoutsディレクトリを作成してdefault.vueファイルを作成
+　　3.2.1 カスタムレイアウトファイル
+　　3.2.2 NuxtLayoutコンポーネント
+　　3.2.3 app.vueファイルの削除
+　　3.2.4 動的にLayoutの変更
+　　3.2.5 名前付きslotの設定
+　3.3 componentsディレクトリ
+	componentsディレクトリにNavbar.vueファイルを作成
+　　3.3.1 Component Name
+　　3.3.2 ComponentsのLazy Loading
+　3.4 ナビゲーション設定
+　3.5 assetsディレクトリの設定
+　　3.5.1 CSSファイルの設定
+	assetsディレクトリににcssディレクトリを作成してstyle.cssファイルを作成
+　　3.5.2 画像のファイルの保存
+　3.6 publicディレクトリの設定
+　　3.6.1 faviconの設定
+	何故か、記事通りにしなくても、最初からpublic\faviconが存在していた
+　3.7 composablesディレクトリ
+	composablesディレクトリを作成してuseCounter.tsファイルを作成
+　3.8 pluginsディレクトリ
+	pluginsディレクトリを作成し、プラグインhello.tsを利用
+4 ルーティングの設定
+　4.1 階層ページの作成
+	pagesディレクトリの中にusersディレクトリを作成し、その下にlist.vueファイルを作成
+　4.2 ページのネスト化
+　4.3 Dynamicルーティング
+	usersディレクトリに[id].vueファイルを作成
+　4.4 middlewareディレクトリ
+	middlewareディレクトリの下にファイルを作成することでRoute Middlewareの設定を行う
+5 Page Transitions	<--------------------skip
+6 Meta Tagsの設定
+　6.1  nuxt.config.tsによる設定
+　6.2 useHeadによる設定
+　6.3 Meta Componentsによる設定
+7 Data Fetching（データ取得に関する関数は次の４つ）
+　7.1 useFetch
+	postsディレクトリを作成してindex.vueファイルを作成
+　7.2 useAsyncData
+　7.3 $fetchについて
+　7.4 useLazyFetch
+　7.5 useLazyAsyncData
+8 Modules
+　8.1 Nuxt Tailwind
+	npm install --save-dev @nuxtjs/tailwindcss
+	nuxt.config.tsファイルに追加
+	npx tailwindcss init
+9 useState
+10 エラーハンドリング	<--------------------skip 後で見直す
+　10.1 NuxtErrorBoundary
+　10.2 ヘルパー関数createError
+　10.3 ヘルパー関数showError
+　10.4 erorr.vue
+　10.5 ヘルパー関数clearError
+　10.6 サーバサイドでのcreateError
+　10.7 vueApp.config.errorHandler
+　10.8 hooksによるエラーの取得
+11 Server API Route	<--------------------skip 後で見直す
+　11.1 serverディレクトリ
+　11.2 データベースへの接続
+　　11.2.1 Prismaの設定
+　　11.2.2 API Routeの追加
+　　11.2.3 入力フォームの追加
+　　11.2.4 POSTリクエストの送信
+　　11.2.5 メソッド毎のファイル作成
+　11.3 routesディレクトリ
+　11.4 middlewareディレクトリ
+12 レンダリングモード
+	ここから-----------------------------------------
+　12.1 動作確認の準備
+　12.2 Universal Mode
+　12.3 CSR Mode
+
+---ここから Netlify へのデプロイ
+githubにリポジトリを用意（あえてフォルダー名を変える）
+	http	https://github.com/kfbk/nuxt3.git
+githubにプッシュ
+	git init
+	git remote add origin https://github.com/kfbk/nuxt3.git
+	git branch -M main
+	git push -u origin main		Nextjsの初期画面が表示される
+	git add .
+	git commit -m "first"
+	git push -u origin main
+Netlify
+	Newして選んで、設定は変えず
