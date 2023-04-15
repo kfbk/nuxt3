@@ -73,7 +73,10 @@ https://reffect.co.jp/vue/nuxt3
 　10.8 hooksによるエラーの取得
 11 Server API Route	<--------------------skip 後で見直す
 　11.1 serverディレクトリ
+	serverディレクトリを作成してさらにその下にapiディレクトリを作成、hello.tsを作ります
+		satou: hello1.ts　＆　hello2.ts
 　11.2 データベースへの接続
+	ここから-----------------------------------------
 　　11.2.1 Prismaの設定
 　　11.2.2 API Routeの追加
 　　11.2.3 入力フォームの追加
@@ -81,8 +84,7 @@ https://reffect.co.jp/vue/nuxt3
 　　11.2.5 メソッド毎のファイル作成
 　11.3 routesディレクトリ
 　11.4 middlewareディレクトリ
-12 レンダリングモード
-	ここから-----------------------------------------
+12 レンダリングモード	<--------------------skip 後で見直す
 　12.1 動作確認の準備
 　12.2 Universal Mode
 　12.3 CSR Mode
@@ -94,9 +96,32 @@ githubにプッシュ
 	git init
 	git remote add origin https://github.com/kfbk/nuxt3.git
 	git branch -M main
-	git push -u origin main		Nextjsの初期画面が表示される
+
+　　次の指令は行うとエラーが出るのでスキップする
+	git push -u origin main
+		error: src refspec main does not match any
+
 	git add .
 	git commit -m "first"
 	git push -u origin main
 Netlify
-	Newして選んで、設定は変えず
+	Newして選んで、設定は変えずデプロイ
+	https://resonant-clafoutis-2e9046.netlify.app/ でOK
+
+---Nuxt.js(Composition API)で簡単ハンバーガーメニュー実装
+https://zenn.dev/fuqda/articles/7ba60d9102907e
+
+	本記事を参考にしてハンバーガーメニューを実装した
+	本記事と違うのは、ブレークポイントがデフォルトのままなので
+	「sm:」は記述しない。
+	さらに、メニューをテーブル化する-->OK
+
+---Nuxt3とmicroCMSで作るブログ
+https://qlitre-weblog.com/nuxt3-microcms-blog-startproject/　①環境構築
+https://qlitre-weblog.com/nuxt3-microcms-blog-postlist/　②記事一覧の表示
+
+	本記事を参考にしてmicroCMSと連携した。
+		yarn add microcms-js-sdk
+	.envファイルの作成
+	nuxt.config.tsの編集
+		process.env にVsCodeで赤波線が出たが、何も言われなかった

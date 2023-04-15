@@ -1,7 +1,6 @@
 <template>
   <div>
     <Html lang="ja" />
-    <!-- <nav>ここにナビゲーションバーを入れる</nav> -->
     <Navbar />
     <slot />
   </div>

@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+const { API_KEY, SERVICE_DOMAIN } = process.env;
+
 export default defineNuxtConfig({
   css: ['/assets/css/style.css'],
   app: {
@@ -12,4 +14,8 @@ export default defineNuxtConfig({
     },
   },
   modules: ['@nuxtjs/tailwindcss'],
+  runtimeConfig: {
+    apiKey: API_KEY,
+    serviceDomain: SERVICE_DOMAIN
+  },
 })

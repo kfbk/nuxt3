@@ -11,5 +11,8 @@
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.6.5",
     "nuxt": "^3.3.3"
+  },
+  "dependencies": {
+    "microcms-js-sdk": "^2.3.3"
   }
 }
