@@ -3,8 +3,8 @@
 export default defineNuxtPlugin(() => {
   return {
     provide: {
-      hello(msg: string) {
-        return `Hello ${msg}!`;
+      hello3(msg: string) {
+        return `Hello3 ${msg}!`;
       },
     },
   };

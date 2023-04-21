@@ -117,11 +117,20 @@ https://zenn.dev/fuqda/articles/7ba60d9102907e
 	さらに、メニューをテーブル化する-->OK
 
 ---Nuxt3とmicroCMSで作るブログ
-https://qlitre-weblog.com/nuxt3-microcms-blog-startproject/　①環境構築
-https://qlitre-weblog.com/nuxt3-microcms-blog-postlist/　②記事一覧の表示
+https://qlitre-weblog.com/nuxt3-microcms-blog-startproject/　	①環境構築
+https://qlitre-weblog.com/nuxt3-microcms-blog-postlist/　	②記事一覧の表示
+https://qlitre-weblog.com/nuxt3-microcms-blog-post-detail/	③記事詳細ページの作成
 
 	本記事を参考にしてmicroCMSと連携した。
 		yarn add microcms-js-sdk
 	.envファイルの作成
 	nuxt.config.tsの編集
 		process.env にVsCodeで赤波線が出たが、何も言われなかった
+	記事一覧APIの作成
+		hello.ts 作成
+			ここまでデプロイOK
+		/types/blog.ts 作成
+	記事一覧をcomponent化
+	日付表記を共通関数で直す
+		yarn add dayjs
+	記事詳細APIの作成

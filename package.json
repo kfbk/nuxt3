@@ -13,6 +13,7 @@
     "nuxt": "^3.3.3"
   },
   "dependencies": {
+    "dayjs": "^1.11.7",
     "microcms-js-sdk": "^2.3.3"
   }
 }
