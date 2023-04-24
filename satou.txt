@@ -71,12 +71,11 @@ https://reffect.co.jp/vue/nuxt3
 @10.6 ƒT[ƒoƒTƒCƒh‚Å‚ÌcreateError
 @10.7 vueApp.config.errorHandler
 @10.8 hooks‚É‚æ‚éƒGƒ‰[‚Ìæ“¾
-11 Server API Route	<--------------------skip Œã‚ÅŒ©’¼‚·
+11 Server API Route
 @11.1 serverƒfƒBƒŒƒNƒgƒŠ
 	serverƒfƒBƒŒƒNƒgƒŠ‚ğì¬‚µ‚Ä‚³‚ç‚É‚»‚Ì‰º‚ÉapiƒfƒBƒŒƒNƒgƒŠ‚ğì¬Ahello.ts‚ğì‚è‚Ü‚·
 		satou: hello1.ts@•@hello2.ts
-@11.2 ƒf[ƒ^ƒx[ƒX‚Ö‚ÌÚ‘±
-	‚±‚±‚©‚ç-----------------------------------------
+@11.2 ƒf[ƒ^ƒx[ƒX‚Ö‚ÌÚ‘±	<--------------------skip
 @@11.2.1 Prisma‚Ìİ’è
 @@11.2.2 API Route‚Ì’Ç‰Á
 @@11.2.3 “ü—ÍƒtƒH[ƒ€‚Ì’Ç‰Á
@@ -120,6 +119,7 @@ https://zenn.dev/fuqda/articles/7ba60d9102907e
 https://qlitre-weblog.com/nuxt3-microcms-blog-startproject/@	‡@ŠÂ‹«\’z
 https://qlitre-weblog.com/nuxt3-microcms-blog-postlist/@	‡A‹L–ˆê——‚Ì•\¦
 https://qlitre-weblog.com/nuxt3-microcms-blog-post-detail/	‡B‹L–Ú×ƒy[ƒW‚Ìì¬
+https://qlitre-weblog.com/nuxt3-microcms-blog-paging/		‡C‹L–ˆê——‚Ìƒy[ƒWƒ“ƒO
 
 	–{‹L–‚ğQl‚É‚µ‚ÄmicroCMS‚Æ˜AŒg‚µ‚½B
 		yarn add microcms-js-sdk
@@ -134,3 +134,11 @@ https://qlitre-weblog.com/nuxt3-microcms-blog-post-detail/	‡B‹L–Ú×ƒy[ƒW‚Ìì
 	“ú•t•\‹L‚ğ‹¤’ÊŠÖ”‚Å’¼‚·
 		yarn add dayjs
 	‹L–Ú×API‚Ìì¬
+	‹L–Ú×ƒy[ƒW‚Ìì¬
+		VsCode‚ÅÔ”gü‚ªarticle‚Éo‚Ä‚¢‚é‚ªA“®‚¢‚Ä‚¢‚é
+		‚±‚±‚Ü‚ÅNetlify‚ÉƒfƒvƒƒCError
+			Cannot read properties of null (reading 'contents')
+		Vercel‚Å‚ÍH
+	ƒR[ƒh‚ÌƒnƒCƒ‰ƒCƒg‚ğs‚¤	<--------------------skip
+	ƒy[ƒWƒ“ƒO‚Ìs‚¢•û
+	HomeƒRƒ“ƒ|[ƒlƒ“ƒg‚Å‹¤’Ê‰»‚·‚é
