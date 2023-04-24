@@ -11,6 +11,7 @@ const { posts } = defineProps<Props>()
 <template>
   <!-- <article v-for="post in posts.contents" :key="post.id"> -->
   <article v-for="post in posts" :key="post.id">
+    <div v-if="post">
     <span>
       <!-- 次を日付用プラグインを呼び出すように変更（ここだけの変更で済む）
          {{ post.publishedAt }} -->
@@ -19,5 +20,6 @@ const { posts } = defineProps<Props>()
     <NuxtLink :to="`/${post.id}`">
       <h1>{{ post.title }}</h1>
     </NuxtLink>
+    </div>
   </article>
 </template>
