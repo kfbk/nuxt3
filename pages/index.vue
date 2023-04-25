@@ -47,4 +47,5 @@ const { $hello3 } = useNuxtApp();
 const { data } = await useFetch('/api/hello1')
 const { data: hello2 } = await useFetch('/api/hello2')
 const { data: posts } = await useFetch('/api/postList') //postListはファイル名
+console.log("posts=", posts)
 </script>
