@@ -19,7 +19,7 @@
   <h2>{{ data }}</h2>
   <h2>{{ hello2 }}</h2>
   <div>-- 記事一覧 --</div>
-  <!-- 次はcomponentsに移動する -->
+  <!-- 次はcomponentsに移動する
   <article v-for="post in posts.contents" :key="post.id">
     <span>
       {{ post.publishedAt }}
@@ -28,7 +28,7 @@
       <h1>{{ post.title }}</h1>
     </NuxtLink>
   </article>
-  
+   -->
    <!-- あえて先頭を小文字にしてみた（ファイル名の通り）
         これで動いた。
         別記事で、「コンポーネントを呼び出すときには先頭は大文字になることに注意」
@@ -47,5 +47,5 @@ const { $hello3 } = useNuxtApp();
 const { data } = await useFetch('/api/hello1')
 const { data: hello2 } = await useFetch('/api/hello2')
 const { data: posts } = await useFetch('/api/postList') //postListはファイル名
-console.log("posts=", posts)
+// console.log("posts=", posts)
 </script>
