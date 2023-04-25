@@ -18,16 +18,16 @@ import { Post } from '../../types/blog'
 */
 export default defineEventHandler(async (event) => {
     // ページングの前
-    // const data = await client
-    //     .getList<Post>({
-    //       endpoint: 'post',
-    //     })
-    // ページングの後
-    const queries = getQuery(event)
     const data = await client
         .getList<Post>({
-            endpoint: 'post',
-            queries: queries
+          endpoint: 'post',
         })
+    // ページングの後
+    // const queries = getQuery(event)
+    // const data = await client
+    //     .getList<Post>({
+    //         endpoint: 'post',
+    //         queries: queries
+    //     })
     return data
 })
