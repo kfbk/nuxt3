@@ -34,7 +34,7 @@
         別記事で、「コンポーネントを呼び出すときには先頭は大文字になることに注意」
         とあったので、大文字にする
   -->
-   <!-- <PostList :posts="posts.contents" /> -->
+   <PostList :posts="posts.contents" />
 </template>
 
 <script setup>
