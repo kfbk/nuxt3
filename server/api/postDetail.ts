@@ -9,7 +9,8 @@ export default defineEventHandler(async (event) => {
     const params = getQuery(event)
     const slug = params.slug
     const data = client.getListDetail<Post>({
-        endpoint: 'post',
+        // endpoint: 'post',
+        endpoint: 'blog',
         contentId: String(slug),
     })
     return data

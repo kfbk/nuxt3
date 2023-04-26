@@ -26,7 +26,8 @@ export default defineEventHandler(async (event) => {
     const queries = getQuery(event)
     const data = await client
         .getList<Post>({
-            endpoint: 'post',
+            // endpoint: 'post',
+            endpoint: 'blog',
             queries: queries
         })
     return data
